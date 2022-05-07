@@ -1,3 +1,7 @@
+body {
+  background-color: black;
+}
+
 .App {
   text-align: center;
 }
@@ -5,6 +9,13 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+}
+
+.App-resume {
+  height: 80vmin;
+  padding: 1.5vmax;
+  pointer-events: none;
+  width: 60vmin;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -22,6 +33,7 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  padding: .5vmin;
 }
 
 .App-link {
