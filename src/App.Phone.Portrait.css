@@ -1,0 +1,13 @@
+/* For Mobile Portrait View */
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+  .App-resume {
+    height: 60vh;
+    width: 95vw;
+    margin: 3vh;
+  }
+
+  .App-header {
+    min-height: 100vh;
+  }
+}

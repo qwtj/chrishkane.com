@@ -1,0 +1,14 @@
+/* For Desktop View */
+@media screen and (min-width: 1024px) {
+  .App-resume {
+    height: 80vmin;
+    padding: 1.5vmax;
+    pointer-events: none;
+    width: 60vmin;
+    margin: .5vmin;
+  }
+
+  .App-header {
+    height: 100vmin;
+  }
+}

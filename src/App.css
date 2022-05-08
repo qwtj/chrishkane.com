@@ -1,3 +1,4 @@
+
 body {
   background-color: black;
 }
@@ -11,13 +12,6 @@ body {
   pointer-events: none;
 }
 
-.App-resume {
-  height: 80vmin;
-  padding: 1.5vmax;
-  pointer-events: none;
-  width: 60vmin;
-}
-
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
@@ -26,14 +20,12 @@ body {
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-  padding: .5vmin;
 }
 
 .App-link {
@@ -48,3 +40,7 @@ body {
     transform: rotate(360deg);
   }
 }
+
+@import url("App.Tablet.Portrait.css");
+@import url("App.Phone.Portrait.css");
+@import url("App.Desktop.css");
