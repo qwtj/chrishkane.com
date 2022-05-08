@@ -3,6 +3,7 @@ import resume from './resume.png'
 import associateArchitect from './aws-certified-solutions-architect-associate.png'
 import cloudPractitioner from './aws-certified-cloud-practitioner.png'
 import './App.css';
+import { Component } from 'react';
 
 function App() {
   return (
@@ -15,7 +16,8 @@ function App() {
   );
 }
 
-function Home() {
+class Home extends Component {
+  render() {
   return (
     <div className="App">
       <link rel="preload" as="image" href="{associateArchitect}" />
@@ -27,14 +29,24 @@ function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={cloudPractitioner} className="App-logo" alt="cloud practitioner" />
+            <img
+              src={cloudPractitioner}
+              className="App-logo"
+              loading="lazy"
+              alt="cloud practitioner"
+            />
           </a>
           <a
             href="https://www.credly.com/badges/3821b7d4-8993-4e28-9569-2a8dedb83b8a/public_url"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={associateArchitect} className="App-logo" alt="associate architect" />
+            <img
+              src={associateArchitect}
+              className="App-logo"
+              loading="lazy"
+              alt="associate architect"
+            />
           </a>
         </div>
         <p>
@@ -50,7 +62,7 @@ function Home() {
       </header>
     </div>
   );
-}
+}}
 
 function Resume() {
   return (
