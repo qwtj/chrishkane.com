@@ -1,6 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import resume from './resume.png'
-import logo from './logo.svg';
+import associateArchitect from './aws-certified-solutions-architect-associate.png'
+import cloudPractitioner from './aws-certified-cloud-practitioner.png'
 import './App.css';
 
 function App() {
@@ -18,7 +19,22 @@ function Home() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <div>
+          <a
+            href="https://www.credly.com/badges/3821b7d4-8993-4e28-9569-2a8dedb83b8a/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={cloudPractitioner} className="App-logo" alt="cloud practitioner" />
+          </a>
+          <a
+            href="https://www.credly.com/badges/3821b7d4-8993-4e28-9569-2a8dedb83b8a/public_url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={associateArchitect} className="App-logo" alt="associate architect" />
+          </a>
+        </div>
         <p>
           Chris H Kane
         </p>
