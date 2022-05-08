@@ -11,4 +11,8 @@ and (orientation: portrait) {
   .App-header {
     min-height: 100vh;
   }
+
+  .App-logo {
+    height: 80vmin;
+  }
 }

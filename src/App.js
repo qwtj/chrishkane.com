@@ -18,6 +18,8 @@ function App() {
 function Home() {
   return (
     <div className="App">
+      <link rel="preload" as="image" href="{associateArchitect}" />
+      <link rel="preload" as="image" href="{cloudPractitioner}" />
       <header className="App-header">
         <div>
           <a

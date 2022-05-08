@@ -11,4 +11,8 @@ and (max-device-width: 1028px) {
   .App-header {
     min-height: 100vh;
   }
+
+  .App-logo {
+    height: 40vmin;
+  }
 }
