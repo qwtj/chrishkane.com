@@ -2,8 +2,13 @@
 @media screen and (min-device-width: 768px)
 and (max-device-width: 1028px) {
  .App-resume {
-    height: 100vmin;
-    padding: 1.5vmax;
-    width: 70vmin;
+    border-radius: 15px;
+    height: 85vh;
+    width: 95vw;
+    margin: 3vh;
+  }
+
+  .App-header {
+    min-height: 100vh;
   }
 }
