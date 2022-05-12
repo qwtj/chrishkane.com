@@ -2,7 +2,7 @@
 @media screen and (min-width: 1024px) {
   .App-resume {
     border-radius: 15px;
-    height: 80vmin;
+    height: calc((11*95vw) / 8.5);
     pointer-events: none;
     width: 60vmin;
     margin: 1.5vmin;
