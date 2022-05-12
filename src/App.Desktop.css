@@ -15,4 +15,9 @@
   .App-logo {
     height: 40vmin;
   }
+
+  .App-link {
+    color: #61dafb;
+    padding: 2vmin;
+  }
 }

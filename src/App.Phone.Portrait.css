@@ -9,10 +9,17 @@ and (orientation: portrait) {
   }
 
   .App-header {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
+    overflow: hidden;
   }
 
   .App-logo {
-    height: 80vmin;
+    height: 60vmin;
+  }
+
+  .App-link {
+    color: #61dafb;
+    padding: 2vmin;
   }
 }

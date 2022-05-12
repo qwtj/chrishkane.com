@@ -1,7 +1,7 @@
 /* For Tablet View */
 @media screen and (min-device-width: 768px)
 and (max-device-width: 1028px) {
- .App-resume {
+  .App-resume {
     border-radius: 15px;
     height: 85vh;
     width: 95vw;
@@ -9,10 +9,16 @@ and (max-device-width: 1028px) {
   }
 
   .App-header {
-    min-height: 100vh;
+    height: 100vh;
+    max-height: 100vh;
   }
 
   .App-logo {
     height: 40vmin;
+  }
+
+  .App-link {
+    color: #61dafb;
+    padding: 2vmin;
   }
 }

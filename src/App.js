@@ -20,10 +20,11 @@ class Home extends Component {
   render() {
   return (
     <div className="App">
-      <link rel="preload" as="image" href="{associateArchitect}" />
-      <link rel="preload" as="image" href="{cloudPractitioner}" />
+      <link rel="preload" as="image" href={associateArchitect} />
+      <link rel="preload" as="image" href={cloudPractitioner} />
+      <link rel="preload" as="image" href={resume} />
       <header className="App-header">
-        <div>
+        <div className="certifications">
           <a
             href="https://www.credly.com/badges/3821b7d4-8993-4e28-9569-2a8dedb83b8a/public_url"
             target="_blank"
@@ -49,7 +50,7 @@ class Home extends Component {
             />
           </a>
         </div>
-        <p>
+        <p className="name">
           Chris H Kane
         </p>
         <a

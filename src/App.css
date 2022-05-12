@@ -17,8 +17,13 @@ body {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.certifications {
+  margin-bottom: 3.6vmin;
+}
+
+.name {
+  line-height: 2.2rem;
+  font-size: 2rem;
 }
 
 @import url("App.Tablet.Portrait.css");
