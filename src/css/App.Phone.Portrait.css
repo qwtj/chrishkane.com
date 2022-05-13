@@ -1,9 +1,8 @@
 /* For Mobile Portrait View */
-@media screen and (max-device-width: 480px)
-and (orientation: portrait) {
+@media screen and (max-device-width: 480px) and (orientation: portrait) {
   .App-resume {
     border-radius: 15px;
-    height: calc((11*95vw) / 8.5);
+    height: calc((11 * 95vw) / 8.5);
     width: 95vw;
     margin: 3vh;
   }
