@@ -26,6 +26,7 @@ body {
   font-size: 2rem;
 }
 
-@import url("App.Tablet.Portrait.css");
-@import url("App.Phone.Portrait.css");
+@import url("App.Tablet.css");
+@import url("App.Phablet.css");
+@import url("App.Phone.css");
 @import url("App.Desktop.css");

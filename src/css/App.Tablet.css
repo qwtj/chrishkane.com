@@ -37,9 +37,10 @@
   }
 
   .Resume-main {
+    box-sizing: border-box;;
     padding: 2vmin;
     margin: auto auto;
-    width: 90vmin;
+    width: 74vw;
     margin-top: 10px;
   }
 
