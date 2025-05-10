@@ -1,8 +1,7 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from 'Layout';
+import Layout from 'core/Layout';
 import Home from 'features/Home';
 import Resume from 'features/Resume';
-import 'css/App.css';
 
 function App() {
   return (
