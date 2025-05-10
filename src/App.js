@@ -166,17 +166,49 @@ function Resume() {
             <div className="Resume-section-background"></div>
             <div className="Resume-intro">
               <h1 className="Resume-name">
-                Chris Kane
+                Christopher Kane
               </h1>
               <article className="Resume-article">
                 <p style={{ fontSize: '.6em' }}>
-                  I have worked at many big tech companies on large scale projects. I love to tinker and fix things.
-                  Also, love to create new software and see it used by others.  I often can lose track of time when something really interest me.
-                  Working at the bottom of the stack was cool having worked on Android security, grpahics and kernel at TI and then iOS MacOS frameworks at Apple.
-                  Working at the top of the stack has had much faster gratification.  I enjoyed working with Unity and 3D artists at GenMZ. 
-                  Architecting a new platform or porting an existing platform has proved to be exciting challenges.  While I had worked with web development
-                  at Samsung as a interface to the physical hardware,  working at ZOCCAM and diving into microservices, CI/CD,
-                  and cloud architecture was surprisingly intuitive and offered a new dimension of encapsulating my experience. 
+                I am a seasoned Senior Engineering Manager with over a decade
+                of extensive experience in architecting and delivering
+                complex, scalable, and secure full-stack solutions across
+                major cloud platforms including AWS, Google Cloud, and Azure.
+                </p>
+                <p style={{ fontSize: '.6em' }}>
+                 My professional journey is marked by a robust track record
+                 in designing, deploying, and optimizing enterprise-level
+                 applications, particularly emphasizing secure, reliable, and
+                 efficient codebases. I excel in modern programming languages
+                 and frameworks with significant expertise in full-stack
+                 development encompassing Angular, React, Vue.js, Node.js, and
+                 particularly mobile native platforms such as Swift and
+                 Objective-C, as demonstrated by my recent leadership in
+                 developing ZOCCAM's native iOS and Android applications.
+                </p>
+                <p style={{ fontSize: '.6em' }}>
+                My technical approach places a strong emphasis on CI/CD
+                practices, Infrastructure as Code (IaC) with tools like
+                Terraform, AWS CDK, and CloudFormation, and I have implemented
+                comprehensive automation solutions via Jenkins, GitHub Actions,
+                and Azure DevOps pipelines. Security remains integral to my
+                development methodology, underpinned by proactive enforcement
+                of rigorous security standards and practices, ensuring code
+                stability, reusability, and scalability.
+                </p>
+                <p style={{ fontSize: '.6em' }}>
+                Beyond my technical capabilities, my strengths include
+                exceptional soft skills that facilitate effective team
+                leadership, mentorship, and client relationship management,
+                particularly in coordinating both onsite and offshore teams.
+                I pride myself on clear, strategic communication and the
+                ability to align technical outcomes with client expectations
+                and broader business objectives. Moving forward, I am seeking
+                opportunities where I can leverage my expertise in cloud
+                architecture and software engineering to lead innovative
+                projects, drive technological advancement, and contribute
+                significantly to the strategic goals of forward-thinking
+                organizations.
                 </p>
               </article>
             </div>
@@ -188,7 +220,8 @@ function Resume() {
               App a content management system.
           </ResumeSection>
           <ResumeSection corpName="Dell" img={ DellLogo } position="Senior Software Engineer">
-              MacOS and iOS engineering for the Dell Data Guardian app and security extensions.
+              MacOS and iOS engineering for the Dell Data Guardian app and
+              security extensions.
           </ResumeSection>
           <ResumeSection corpName="AdGiants" img={ AdGiant } position="Senior Software Engineer">
             React with Redux social network with content
@@ -198,8 +231,8 @@ function Resume() {
           <ResumeSection corpName="GenMZ" img={ GenMZ } style={{ padding : '.6em' }} position="Senior Software Engineer">
             Lead the team to first integrated release.
             Participated in ongoing design discussions with 3d animation team.
-            Developed iOS application with unity.  
-          </ResumeSection>   
+            Developed iOS application with unity.
+          </ResumeSection>
           <ResumeSection corpName="ZOCCAM" img={ Z }  style={{ padding : '.6em' }} position="Platform Architect / Lead">
             Deliver & redesign personal check transfer system in 30 days.
             Support initial Azure infrastruture and Xamarin Mobile Apps.
@@ -210,18 +243,22 @@ function Resume() {
           </ResumeSection>
           <ResumeSection corpName="Apple" img={ AppleLogo } style={{ padding : '.6em' }} position="Senior Software Engineer">
             Collaborate cross teams to analyze bug reports and produce fixes
-            Root cause and fix issues related to OS frameworks and hardware changes
+            Root cause and fix issues related to OS frameworks and hardware
+            changes
             Git based repos and Radar for development tracking
           </ResumeSection>
           <ResumeSection corpName="Samsung" img={ Samsung } position="Soffware Engineer">
-            Utilize third party libraries such as Google's Protobuff and Boost for C++ dev Linux
+            Utilize third party libraries such as Google's Protobuff and Boost
+            for C++ dev Linux
             Assist and develop a web front end in AngularJS with Javascript
-            Develop web services in C/C++ Node modules to interact with hardware
+            Develop web services in C/C++ Node modules to interact with
+            hardware
           </ResumeSection>
           <ResumeSection corpName="Texas Instruments" img={ TI } position="Software Engineer">
             Support and prototype Widevine for external customers on ARM
             Android ARM board bring up and upgrade support
-            Develop and support OMAP & M-Shield technology development JAG & low-level hardware analysis
+            Develop and support OMAP & M-Shield technology development JAG &
+            low-level hardware analysis
             Understanding of Roots of Trust and PKI
           </ResumeSection>
           <ResumeSection corpName="Univ. of North Texas" style={{ padding : '.6em' }} img={ UNT }position="Network Technician">
