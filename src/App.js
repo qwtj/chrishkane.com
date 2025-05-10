@@ -1,16 +1,16 @@
 import { Routes, Route, Link } from "react-router-dom";
-import resume from './resume.png'
-import associateArchitect from './aws-certified-solutions-architect-associate.png'
-import cloudPractitioner from './aws-certified-cloud-practitioner.png'
-import AppleLogo from './Apple_Computer_Logo_rainbow.png'
-import DellLogo from './Dell-Logo-PNG-03197-300x300.png'
-import AdGiant from './Ad-Giants-2019-Logo-Stack.png'
-import GenMZ from './genmz.png'
-import Z from './zoccamlogo.png'
-import Samsung from './samsung-logo.png'
-import ThirdID from './3rdid.jpeg'
-import TI from './ti.png'
-import UNT from './unt.png'
+import resume from './assets/resume.png'
+import associateArchitect from './assets/aws-certified-solutions-architect-associate.png'
+import cloudPractitioner from './assets/aws-certified-cloud-practitioner.png'
+import AppleLogo from './assets/Apple_Computer_Logo_rainbow.png'
+import DellLogo from './assets/Dell-Logo-PNG-03197-300x300.png'
+import AdGiant from './assets/Ad-Giants-2019-Logo-Stack.png'
+import GenMZ from './assets/genmz.png'
+import Z from './assets/zoccamlogo.png'
+import Samsung from './assets/samsung-logo.png'
+import ThirdID from './assets/3rdid.jpeg'
+import TI from './assets/ti.png'
+import UNT from './assets/unt.png'
 
 import './css/App.css';
 import { Component } from 'react';
