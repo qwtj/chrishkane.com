@@ -1,87 +1,85 @@
-/* Roles.css */
-
-/* Main container styles */
+/* Home Section Styles */
 .skills-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 5.2rem 2rem;
-    font-family: 'Arial', sans-serif;
-    color: #e6e6e6;
-    background-color: var(--color-background-secondary); /* Match dark background */
-  }
-  
-  /* Main heading */
-  .skills-container h1 {
-    font-size: 2.5rem;
-    margin-bottom: 2.5rem;
-    font-weight: 600;
-    position: relative;
-    display: inline-block;
-    color: var(--color-text);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #e6e6e6;
+  background-color: var(
+    --color-background-secondary
+  ); /* Match dark background */
+}
+
+/* Main heading */
+.skills-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  color: var(--color-text);
+}
+
+.skills-container h1::after {
+  --color-header-drop-line: #3498db;
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px; /* Wider underline to match screenshot */
+  height: 4px;
+  background: var(--color-header-drop-line); /* Blue accent color */
+}
+
+/* Section container */
+.skill-section {
+  margin-bottom: 30px;
+}
+
+/* Section heading */
+.skill-section h2 {
+  font-size: 22px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+/* List styles */
+.skill-section ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.skill-section li {
+  position: relative;
+  padding: 6px 0 6px 20px;
+  border-left: 2px solid #444;
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+.skill-section li::before {
+  content: "-";
+  position: absolute;
+  left: 8px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .skills-container {
+    padding: 15px;
   }
 
-  .skills-container h1::after {
-    --color-header-drop-line: #3498db;
-    content: '';
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 80px; /* Wider underline to match screenshot */
-    height: 4px;
-    background: var(--color-header-drop-line); /* Blue accent color */
+  .skills-container h1 {
+    font-size: 24px;
   }
-  
-  
-  /* Section container */
-  .skill-section {
-    margin-bottom: 30px;
-  }
-  
-  /* Section heading */
+
   .skill-section h2 {
-    font-size: 22px;
-    color: #ffffff;
-    margin-bottom: 15px;
-    font-weight: 500;
+    font-size: 20px;
   }
-  
-  /* List styles */
-  .skill-section ul {
-    list-style-type: none;
-    padding-left: 0;
-  }
-  
-  .skill-section li {
-    position: relative;
-    padding: 6px 0 6px 20px;
-    border-left: 2px solid #444;
-    margin-bottom: 10px;
-    line-height: 1.5;
-  }
-  
-  .skill-section li::before {
-    content: "-";
-    position: absolute;
-    left: 8px;
-  }
-  
-  /* Responsive design */
-  @media (max-width: 768px) {
-    .skills-container {
-      padding: 15px;
-    }
-    
-    .skills-container h1 {
-      font-size: 24px;
-    }
-    
-    .skill-section h2 {
-      font-size: 20px;
-    }
-  }
-  
-  /* Add highlight for skills that contain specific tech keywords */
-  .skill-section li strong {
-    color: #61dafb; /* React color */
-    font-weight: 500;
-  }
+}
+
+/* Add highlight for skills that contain specific tech keywords */
+.skill-section li strong {
+  color: #61dafb; /* React color */
+  font-weight: 500;
+}
