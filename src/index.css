@@ -31,6 +31,7 @@
 @media (prefers-color-scheme: dark) {
 :root{
     /* Define default colorr for dark them */
+    --color-light-background: #dfdfdf;
     --color-background: #0a0a0a;
     --color-background-secondary: #121212;
     --color-text: #ffffff;
