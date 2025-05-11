@@ -13,15 +13,17 @@
   --font-size-medium: 1rem;
   --font-size-large: 1.25rem;
   --font-size-xlarge: 1.5rem;
+
+  color: var(--color-text);
 }
 
 @media (prefers-color-scheme: dark) {
 :root{
     /* Define default colorr for dark them */
-    --color-background: #000000;
+    --color-background: #0a0a0a;
     --color-text: #ffffff;
     --color-primary: #0070f3;
-    --color-secondary: #ffffff;
+    --color-secondary: #999;
     --color-border: #444444;
     --color-border-hover: #005bb5;
     --color-border-active: #0070f3;
@@ -34,11 +36,22 @@
   }
 }
 
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: var(--color-secondary);
+}
+
+
 body {
-  margin: 0;
+  background-color: var(--color-background);
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
 }

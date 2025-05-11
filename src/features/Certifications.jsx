@@ -1,13 +1,20 @@
-import { Component } from 'react';
-
 import associateArchitect from 'assets/aws-certified-solutions-architect-associate.png'
 import cloudPractitioner from 'assets/aws-certified-cloud-practitioner.png'
 
-class Home extends Component {
-    render() {
+
+const Certifications = () => {
     return (
-      <div className="App">
-        <link rel="preload" as="image" href={associateArchitect} />
+        <div>
+            <h1>Certifications</h1>
+            <p>Here are some of my certifications:</p>
+            <ul>
+                <li>Certified Kubernetes Administrator (CKA)</li>
+                <li>AWS Certified Solutions Architect - Associate</li>
+                <li>Google Cloud Professional Cloud Architect</li>
+                <li>Microsoft Certified: Azure Solutions Architect Expert</li>
+                <li>HashiCorp Certified: Terraform Associate</li>
+            </ul>
+            <link rel="preload" as="image" href={associateArchitect} />
         <link rel="preload" as="image" href={cloudPractitioner} />
         <header className="App-header">
           <div className="certifications">
@@ -105,8 +112,8 @@ class Home extends Component {
             Peek Resume
           </a>
         </header>
-      </div>
+        </div>
     );
-  }}
+};
 
-  export default Home;
+export default Certifications;
