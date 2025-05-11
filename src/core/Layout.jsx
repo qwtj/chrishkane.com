@@ -9,7 +9,7 @@ const Layout = () => {
           <span> | </span>
           <NavLink className="navlink" to="/about" >About Me</NavLink>
           <span> | </span>
-          <NavLink className="navlink" to="/roles" >Job Roles</NavLink>
+          <NavLink className="navlink" to="/jobs" >Job History</NavLink>
           <span> | </span>
           <NavLink className="navlink" to="/certifications" >Prior Certifications</NavLink>
           <span> | </span>
