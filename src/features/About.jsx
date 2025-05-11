@@ -3,10 +3,10 @@ import "features/About.css";
 const About = () => {
   return (
     <section className="about-section">
-      <h2 className="about-heading">About</h2>
+      <h1 className="about-heading">About</h1>
       <div className="about-content">
         <p className="about-paragraph">
-          I am a seasoned Senior Engineering Manager with over a decade of extensive experience in architecting and
+          I am a seasoned Principal Engineer with over a decade of extensive experience in architecting and
           delivering complex, scalable, and secure full-stack solutions across major cloud platforms including AWS,
           Google Cloud, and Azure.
         </p>
@@ -15,7 +15,8 @@ const About = () => {
           level applications, particularly emphasizing secure, reliable, and efficient codebases. I excel in modern
           programming languages and frameworks with significant expertise in full-stack development encompassing
           Angular, React, Vue.js, Node.js, and particularly mobile native platforms such as Swift and Objective-C, as
-          demonstrated by my recent leadership in developing ZOCCAM's native iOS and Android applications.
+          demonstrated by my recent leadership in developing ZOCCAM's native iOS and Android applications.  My most
+          recent endeavor was learning Rust in 24 hours based on prior knowledge of C C++, Go Lang and Java.
         </p>
         <p className="about-paragraph">
           My technical approach places a strong emphasis on CI/CD practices, Infrastructure as Code (IaC) with tools

@@ -1,6 +1,7 @@
 /* About Section Styles */
 .about-section {
   max-width: 1200px;
+  min-height: 100%;
   margin: 0 auto;
   padding: 4rem 2rem;
   color: var(--color-text);
