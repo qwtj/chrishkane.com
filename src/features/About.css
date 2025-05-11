@@ -1,0 +1,86 @@
+/* About Section Styles */
+.about-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: #f0f0f0;
+  background-color: #121212; /* Match dark background */
+}
+
+.about-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  color: #ffffff;
+}
+
+.about-heading::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px; /* Wider underline to match screenshot */
+  height: 4px;
+  background: #3498db; /* Blue accent color */
+}
+
+.about-content {
+  display: grid;
+  gap: 2rem; /* Increased spacing between paragraphs */
+}
+
+.about-paragraph {
+  line-height: 1.8;
+  font-size: 1.05rem;
+  max-width: 90ch; /* Improve readability with character width limit */
+}
+
+/* Navigation enhancements to match screenshot */
+.nav-container {
+  display: flex;
+  padding: 1rem 2rem;
+  background-color: #121212;
+  border-bottom: 1px solid #333;
+}
+
+.nav-link {
+  color: #f0f0f0;
+  margin-right: 2rem;
+  text-decoration: none;
+  position: relative;
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background: #3498db;
+}
+
+/* Footer adjustment */
+.footer {
+  text-align: center;
+  padding: 1.5rem;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-section {
+    padding: 3rem 1.5rem;
+  }
+  
+  .about-heading {
+    font-size: 2rem;
+  }
+  
+  .about-paragraph {
+    font-size: 1rem;
+  }
+}
