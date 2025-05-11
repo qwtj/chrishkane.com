@@ -1,6 +1,7 @@
 :root {
   /* Define default colorr for light them */
   --color-background: #ffffff;
+  --color-background-secondary: #9A9A9A;
   --color-text: #000000;
   --color-primary: #0070f3;
   --color-secondary: #1a1a1a;
@@ -8,6 +9,8 @@
   --color-border-hover: #0070f3;
   --color-border-active: #005bb5;
   --color-link-active: #333333b;
+  --color-header-background: #eee;
+  --color-footer-background: #eee;
 
 
   /* Define default font sizes */
@@ -23,6 +26,7 @@
 :root{
     /* Define default colorr for dark them */
     --color-background: #0a0a0a;
+    --color-background-secondary: #121212;
     --color-text: #ffffff;
     --color-primary: #0070f3;
     --color-secondary: #999;
@@ -30,7 +34,8 @@
     --color-border-hover: #005bb5;
     --color-border-active: #0070f3;
     --color-link-active: #bbbbbb;
-
+    --color-header-background: #111;
+    --color-footer-background: #111;
     color: var(--color-text);
   }
 }
@@ -55,7 +60,7 @@ nav {
   align-items: left;
   gap: 1rem;
   padding: 1rem;
-  background-color: #111;
+  background-color: var(--color-header-background);
 }
 
 nav a {
@@ -66,13 +71,18 @@ nav a {
 }
 
 nav a:hover {
-  color: #bbbbbb;
+  color: var(--color-link-active);
 }
 
 nav a.active {
   font-weight: 500;
   text-decoration: underline;
   text-underline-offset: 5px;
+}
+
+nav span {
+    margin: 0.5rem;
+    color: #555;
 }
 
 main {
@@ -99,8 +109,10 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 1rem;
-  background-color: #111;
+  padding: 1.5rem;
+  font-size: 0.9rem;
+  background-color: var(--color-footer-background);
+
   max-height: 2rem;
 }
 
