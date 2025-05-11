@@ -2,10 +2,11 @@ import "features/Certifications.css";
 import associateArchitect from 'assets/aws-certified-solutions-architect-associate.png'
 import cloudPractitioner from 'assets/aws-certified-cloud-practitioner.png'
 import w3c from 'assets/w3c.png'
+import Header from "shared/Header";
 const Certifications = () => {
     return (
         <section className="certifications-section">
-            <h1 className="certifications-heading">Certifications</h1>
+            <Header title="Certifications" />
             <ul className="certifications-list">
               <li>
                 <h2>AWS Certified Cloud Practitioner</h2>

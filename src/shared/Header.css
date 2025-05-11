@@ -16,12 +16,11 @@
 }
 
 .header-title::after {
-  --color-header-drop-line: #3498db;
   content: "";
   position: absolute;
   left: 0;
   bottom: -10px;
-  width: 100%;
+  width: 90%;
   height: 4px;
   background: var(--color-header-drop-line);
 }

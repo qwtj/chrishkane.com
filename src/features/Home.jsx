@@ -1,4 +1,5 @@
 import "features/Home.css";
+import Header from "shared/Header";
 
 const Home = () => {
     const skillSections = [
@@ -86,8 +87,7 @@ const Home = () => {
   
     return (
       <div className="skills-container">
-        <h1>Architect & Full Stack Engineer</h1>
-        
+        <Header title="Architect & Full Stack Engineer" />
         {skillSections.map((section, index) => (
           <section key={index} className="skill-section">
             <h2>{section.title}</h2>

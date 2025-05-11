@@ -1,9 +1,10 @@
 import "features/About.css";
+import Header from "shared/Header";
 
 const About = () => {
   return (
     <section className="about-section">
-      <h1 className="about-heading">About</h1>
+      <Header title="About" />
       <div className="about-content">
         <p className="about-paragraph">
           I am a seasoned Principal Engineer with over a decade of extensive experience in architecting and

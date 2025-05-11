@@ -11,7 +11,7 @@
   --color-link-active: #333333b;
   --color-header-background: #eee;
   --color-footer-background: #eee;
-
+  --color-header-drop-line: #3498db;
 
   /* Define default font sizes */
   --font-size-small: 0.875rem;
@@ -40,6 +40,7 @@
     --color-border-hover: #005bb5;
     --color-border-active: #0070f3;
     --color-link-active: #bbbbbb;
+    --color-header-drop-line: #3498db;
     --color-header-background: #111;
     --color-footer-background: #111;
     color: var(--color-text);

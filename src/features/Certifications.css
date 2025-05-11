@@ -10,26 +10,6 @@
   ); /* Match dark background */
 }
 
-.certifications-heading {
-  font-size: 2.5rem;
-  margin-bottom: 2.5rem;
-  font-weight: 600;
-  position: relative;
-  display: inline-block;
-  color: var(--color-text);
-}
-
-.certifications-heading::after {
-  --color-header-drop-line: #3498db;
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -10px;
-  width: 80px; /* Wider underline to match screenshot */
-  height: 4px;
-  background: var(--color-header-drop-line); /* Blue accent color */
-}
-
 .certifications-list {
   display: flex;
   flex-wrap: wrap;
