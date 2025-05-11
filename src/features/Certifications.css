@@ -1,0 +1,60 @@
+/* Certifications Section Styles */
+.certifications-section {
+  max-width: 1200px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+  color: var(--color-text);
+  background-color: var(
+    --color-background-secondary
+  ); /* Match dark background */
+}
+
+.certifications-heading {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+  font-weight: 600;
+  position: relative;
+  display: inline-block;
+  color: var(--color-text);
+}
+
+.certifications-heading::after {
+  --color-header-drop-line: #3498db;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px; /* Wider underline to match screenshot */
+  height: 4px;
+  background: var(--color-header-drop-line); /* Blue accent color */
+}
+
+.certifications-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem; /* Space between items */
+  justify-content: center; /* Center items */
+}
+
+.certifications-list li {
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--box-shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  list-style: none;
+  text-align: center;
+}
+
+.certifications-list li h2 {
+  font-size: 1.2rem;
+  margin-bottom: 2.5rem;
+}
+
+.certifications-list img {
+  width: 100%;
+  max-width: 200px; /* Adjusted for better fit */
+  height: auto;
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
