@@ -14,8 +14,8 @@ const Layout = () => {
           <NavLink className="navlink" to="/certifications" >Prior Certifications</NavLink>
           <span> | </span>
           <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
-          <a href="/iventoryApp" target="_blank" rel="noopener noreferrer">Home Inventory</a>
-          <a href="/interactigve-ebook" target="_blank" rel="noopener noreferrer">Gemin E-Book Writer</a>
+          <a href="/inventoryApp/index.html" target="_blank" rel="noopener noreferrer">Home Inventory</a>
+          <a href="/interactive-ebook/index.html" target="_blank" rel="noopener noreferrer">Gemin E-Book Writer</a>
         </nav>
         <main>
           <Outlet /> {/* Child routes will render here */}
