@@ -7,7 +7,7 @@ const About = () => {
       <Header title="About" />
       <div className="about-content">
         <p className="about-paragraph">
-          I am a seasoned Principal Engineer with over a decade of extensive experience in architecting and
+          I am a seasoned Principal Software & Cloud Engineer with over a decade of extensive experience in architecting and
           delivering complex, scalable, and secure full-stack solutions across major cloud platforms including AWS,
           Google Cloud, and Azure.
         </p>

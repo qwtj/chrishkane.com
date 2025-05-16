@@ -3,7 +3,7 @@ import "features/JobHistory.css"; // Assuming you have a CSS file for styling
 
 const jobs = [
   {
-    job: "Cognizant - Project: BCBSA - Principal Engineer",
+    job: "Cognizant - Project: BCBSA - Principal Software & Cloud Engineer",
     timeFrame: "2019-2025",
     longFormat:
       "Selected to design and implement a robust solution for real-time change tracking within a centralized database used across multiple operational plans for BCBSA. The primary objective was to securely store these data changes in object storage. Subsequently, leveraged AWS Glue ETL jobs to seamlessly partition and transform the data into structured CSV logs, tailored to each respective plan's requirements. This approach mirrored the principles applied in similar projects like ZOCCAM, albeit with a focus on egressing data changes securely to the respective plans for consumption via a secure FTP connection.",
@@ -19,7 +19,7 @@ const jobs = [
     ],
   },
   {
-    job: "Cognizant - Project: Trane - Principal Engineer",
+    job: "Cognizant - Project: Trane - Principal Software & Cloud Engineer",
     timeFrame: "2019-2025",
     longFormat:
       "Chosen for my extensive expertise in front-end development with Vue, React, and Angular frameworks to lead a team in creating a graphing application for designing Air Conditioning Systems for Trane Technologies. Became a GoJS expert to accelerate development, resulting in a successful release within 3 months. Provided critical AWS support to address performance issues. Utilized RxJs and NgRx extensively in the application, which was written in the latest Angular framework with TypeScript. Also, provided guidance to junior developers in writing better maintainable & reusable components.",
@@ -39,7 +39,7 @@ const jobs = [
     ],
   },
   {
-    job: "Cognizant - Project: Apple - Principal Engineer",
+    job: "Cognizant - Project: Apple - Principal Software & Cloud Engineer",
     timeFrame: "2019-2025",
     longFormat:
       "In my capacity as a Cloud Engineering/Full Stack Lead at Apple (client for Cognizant), my primary responsibility was to architect the marketing platform that serves as the nexus between marketers and talent for Apple. I spearheaded a team of five engineers, collaborating closely with Apple's MARCOM team to meet their client-side requirements. Utilized Vue.js for the client-side development and harnessed Node.js for server-side web applications. In the initial stages, I expedited the deployment of AWS infrastructure through CloudFormation. Subsequently, I transitioned our approach to leverage AWS CDK in Python, enabling the entire team to contribute effectively. Beyond this role, I undertook the crucial task of architecting the migration of other applications from legacy systems to AWS and GCP for the IS&T team.",
@@ -62,7 +62,7 @@ const jobs = [
     ],
   },
   {
-    job: "Dell - Data Guardian - Staff Engineer",
+    job: "Dell - Data Guardian - Staff Software Engineer",
     timeFrame: "2019",
     longFormat:
       "Developed and maintained Dell Data Guardian clients for macOS System Extensions and native iOS secure-viewer, adding on-device encryption, rights enforcement, and real-time policy sync with the cloud entitlement service at Dell.",
@@ -77,7 +77,7 @@ const jobs = [
     ],
   },
   {
-    job: "GeneMZ - 3D Social Media Platform - Principal Engineer",
+    job: "GeneMZ - 3D Social Media Platform - Principal Software & Cloud  Engineer",
     timeFrame: "2018",
     longFormat:
       "Directed full-stack product delivery for a green-field mobile-and-web platform at GenMZ, defining architecture and hands-on building React front-ends, Node.js/Java Spring Boot services, and AWS infrastructure-as-code pipelines.",
@@ -93,7 +93,7 @@ const jobs = [
     ],
   },
   {
-    job: "ZOCCAM - Real Estate Check Processing (X9) - Principal Engineer",
+    job: "ZOCCAM - Real Estate Check Processing (X9) - Principal Software & Cloud Engineer",
     timeFrame: "2017-2018",
     longFormat:
       "Drove full-cycle product engineering for ZOCCAM’s mobile check-deposit platform, balancing strategic leadership with hands-on coding across native, web, and backend layers at ZOCCAM.",
@@ -110,7 +110,7 @@ const jobs = [
     ],
   },
   {
-    job: "Apple - iOS/MacOS Frameworks - Staff Engineer",
+    job: "Apple - iOS/MacOS Frameworks - Staff Software Engineer",
     timeFrame: "2013-2017",
     longFormat:
       "Drive design and implementation of compatibility shims and dyld enhancements that preserve ABI/API contracts across macOS & iOS releases at Apple.",
@@ -153,7 +153,7 @@ const jobs = [
     ],
   },
   {
-    job: "University of North Texas - Software Engineer",
+    job: "University of North Texas - Software Developer",
     timeFrame: "2008-2011",
     longFormat:
       "Administered campus network infrastructure—including routers, switches, and firewalls—to provide secure, reliable connectivity for faculty, staff, and students at the University of North Texas.",
