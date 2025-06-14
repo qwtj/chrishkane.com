@@ -1,0 +1,15 @@
+#!/usr/bin/env zsh
+
+BASE_DIR="$(git rev-parse --show-toplevel 2>/dev/null || pwd)"
+BUCKET_NAME=${1:-"chrishkane.com"}
+STACK_NAME=${2:-"s3-stack"}
+AWS_REGION=${3:-$(aws configure get region)}
+TEMPLATE_PATH="$BASE_DIR/s3/web.yaml"
+
+aws cloudformation deploy \
+  --template-file "$TEMPLATE_PATH" \
+  --stack-name "$STACK_NAME" \
+  --parameter-overrides \
+    BucketName="$BUCKET_NAME" \
+    Region="$AWS_REGION" \
+  --capabilities CAPABILITY_IAM

@@ -1,0 +1,105 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    Properties:
+      BucketName: chrishkane.com
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        IgnorePublicAcls: true
+        BlockPublicPolicy: true
+        RestrictPublicBuckets: true
+      BucketEncryption:
+        ServerSideEncryptionConfiguration:
+          - ServerSideEncryptionByDefault:
+              SSEAlgorithm: AES256
+
+  S3BucketPolicy:
+    Type: 'AWS::S3::BucketPolicy'
+    Properties:
+      Bucket: !Ref S3Bucket
+      PolicyDocument:
+        Version: '2012-10-17'
+        Statement:
+          - Sid: AllowCloudFrontAccess
+            Effect: Allow
+            Principal:
+              Service: cloudfront.amazonaws.com
+            Action: 's3:GetObject'
+            Resource: !Sub 'arn:aws:s3:::${S3Bucket}/*'
+            Condition:
+              StringEquals:
+                aws:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${CloudFrontDistribution}'
+
+  CloudFrontOAC:
+    Type: 'AWS::CloudFront::OriginAccessControl'
+    Properties:
+      OriginAccessControlConfig:
+        Name: CloudFrontOAC
+        SigningProtocol: sigv4
+        SigningBehavior: always
+        OriginAccessControlOriginType: s3
+
+  Certificate:
+    Type: 'AWS::CertificateManager::Certificate'
+    Properties:
+      DomainName: 'chrishkane.com'
+      SubjectAlternativeNames:
+        - 'www.chrishkane.com'
+      ValidationMethod: DNS
+      DomainValidationOptions:
+        - DomainName: 'chrishkane.com'
+          ValidationDomain: 'chrishkane.com'
+        - DomainName: 'www.chrishkane.com'
+          ValidationDomain: 'chrishkane.com'
+
+  CloudFrontDistribution:
+    Type: 'AWS::CloudFront::Distribution'
+    Properties:
+      DistributionConfig:
+        Restrictions:
+          GeoRestriction:
+            RestrictionType: "blacklist"  # "whitelist" to allow only these countries
+            Locations:
+              - "RU"  # Russia
+              - "CN"  # China
+              - "KP"  # North Korea
+        Aliases:
+          - 'chrishkane.com'
+          - 'www.chrishkane.com'
+        Origins:
+          - Id: S3Origin
+            DomainName: !GetAtt S3Bucket.DomainName
+            OriginAccessControlId: !Ref CloudFrontOAC
+            S3OriginConfig: {}  # Required for OAC
+        Enabled: true
+        DefaultRootObject: index.html
+        DefaultCacheBehavior:
+          AllowedMethods:
+            - GET
+            - HEAD
+          TargetOriginId: S3Origin
+          ViewerProtocolPolicy: redirect-to-https
+          ForwardedValues:
+            QueryString: false
+            Cookies:
+              Forward: none
+        ViewerCertificate:
+          AcmCertificateArn: !Ref Certificate
+          SslSupportMethod: sni-only
+          MinimumProtocolVersion: TLSv1.2_2021
+
+  Route53RecordSet:
+    Type: 'AWS::Route53::RecordSet'
+    Properties:
+      HostedZoneName: 'chrishkane.com.'
+      Name: 'www.chrishkane.com.'
+      Type: 'A'
+      AliasTarget:
+        HostedZoneId: 'Z2FDTNDATAQYW2'
+        DNSName: !GetAtt CloudFrontDistribution.DomainName
+
+Outputs:
+  CloudFrontURL:
+    Value: !GetAtt CloudFrontDistribution.DomainName
+    Description: URL of the CloudFront distribution
