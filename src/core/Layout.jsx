@@ -1,5 +1,4 @@
 import { Outlet, NavLink } from "react-router-dom";
-import Resume from "assets/resume.pdf";
 
 const Layout = () => {
     return (
@@ -7,9 +6,7 @@ const Layout = () => {
         <nav>
           <NavLink to="/" end>Home</NavLink>
           <NavLink className="navlink" to="/about" >About Me</NavLink>
-          <NavLink className="navlink" to="/jobs" >Job History</NavLink>
           <NavLink className="navlink" to="/certifications" >Prior Certifications</NavLink>
-          <a href={Resume} target="_blank" rel="noopener noreferrer">Resume</a>
           <a href="https://github.com/qwtj" target="_blank" rel="noopener noreferrer">Github</a>
           <a href="/inventoryApp/index.html" target="_blank" rel="noopener noreferrer">Home Inventory</a>
           <a href="/interactive-ebook/index.html" target="_blank" rel="noopener noreferrer">Gemini E-Book Writer</a>
